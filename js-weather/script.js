@@ -1,32 +1,11 @@
 'use strict';
 
-//let city = 'London';
 const INITIAL_CITY = 'London';
 const lang = 'ja';
 const units = 'metric';
 const appid = '4b5774e9f3d2a07b84f0f2f88e486224';
 
-/* var city = 'London';
-var lang = 'ja';
-var units = 'metric';
-var appid = '4b5774e9f3d2a07b84f0f2f88e486224'; */
-
-//const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${appid}&lang=${lang}&units=${units}`;
-
-/* var select = document.getElementById("city-select");
-select.options[0].selected = true;
-console.log(select.options[0].value);
-const city = select.options[0].value; */
-
 var citySelected = document.getElementById("city-select");
-//var city = citySelected;
-//console.log(city.value);
-
-/* console.log(citySelected.value);
-console.log(city); */
-//console.log(city);
-
-
 
 document.getElementById("city-select").onchange = function() {
     /* console.log("bbb");
