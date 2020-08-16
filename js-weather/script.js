@@ -31,12 +31,20 @@ function ajaxRequest(city) {
         const temp = Math.round(data.main.temp * 10) / 10;
         const windspeed = data.wind.speed;
 
+        $('#city').html(city);
+        $('#date-1').html(myMonth + '月' + myDate + '日' + '(' + myWeek + ')');
+        $('#date-2').html(myHours + '時' + myMin + '分');
+        $('#desc').html(desc);
+        $('#temp').html(temp);
+        $('#windspeed').html(windspeed);
+        /*
         document.getElementById('city').textContent = city;
         document.getElementById('date-1').textContent = `${myMonth}月${myDate}日（${myWeek}）`;
         document.getElementById('date-2').textContent = `${myHours}時${myMin}分`;
         document.getElementById('desc').textContent = desc;
         document.getElementById('temp').textContent = temp;
         document.getElementById('windspeed').textContent = windspeed;
+        */
     })
     .catch(err => {
         console.log(err);
